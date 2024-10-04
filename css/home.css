@@ -1,0 +1,124 @@
+:root {
+  --md-sys-shape-corner-small: 4px;
+  --md-sys-shape-corner-medium: 6px;
+  --md-sys-shape-corner-large: 13px;
+  --md-ref-typeface-brand: "Roboto";
+}
+
+:root,
+:host {
+  --md-sys-color-background: #fbf8ff;
+  --md-sys-color-on-background: #1a1b22;
+  --md-sys-color-surface: #fbf8ff;
+  --md-sys-color-surface-dim: #dad9e3;
+  --md-sys-color-surface-bright: #fbf8ff;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f4f2fc;
+  --md-sys-color-surface-container: #eeedf7;
+  --md-sys-color-surface-container-high: #e9e7f1;
+  --md-sys-color-surface-container-highest: #e3e1eb;
+  --md-sys-color-on-surface: #1a1b22;
+  --md-sys-color-surface-variant: #e1e1f2;
+  --md-sys-color-on-surface-variant: #444653;
+  --md-sys-color-inverse-surface: #2f3037;
+  --md-sys-color-inverse-on-surface: #f1eff9;
+  --md-sys-color-outline: #757684;
+  --md-sys-color-outline-variant: #c5c5d5;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-surface-tint: #3e54c1;
+  --md-sys-color-primary: #00166a;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #1c36a4;
+  --md-sys-color-on-primary-container: #d2d7ff;
+  --md-sys-color-inverse-primary: #bac3ff;
+  --md-sys-color-secondary: #545c87;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #cdd3ff;
+  --md-sys-color-on-secondary-container: #363d66;
+  --md-sys-color-tertiary: #3c004f;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #681c81;
+  --md-sys-color-on-tertiary-container: #f7c9ff;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.sign-in-container, .verify-container {
+  background-color: var(--md-sys-color-on-primary-container);
+  padding: 2rem;
+  border-radius: var(--md-sys-shape-corner-large);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+
+.input-field {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.sign-in-header, .verify-header {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+md-filled-button {
+  width: auto;
+  --md-filled-button-container-color: #1c36a4;
+  --md-filled-button-label-text-color: white;
+  margin-top: 16px;
+  align-self: flex-end;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.register-link a {
+  text-decoration: none;
+  color: #1c36a4;
+}
+
+.input-field {
+  width: 100%;
+}
+
+md-filled-text-field {
+  width: 100%;
+}
+
+#error-message {
+  color: var(--md-sys-color-error);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
